@@ -1,5 +1,15 @@
 ASM=nasm
 CC=gcc
+
+# some variables for the 16 bit compiler
+CC16=/usr/bin/watcom/binl/wcc
+# we use the watcom linker 'wlnker' bcaus
+# it has support for the 'obj' object file format that is
+# used by the watcom compiler. The default linker 'ld' used by gcc
+# does not support the obj file format
+LD16=/usr/bin/watcom/binl/wlink
+
+
 SRC_DIR=src
 TOOLS_DIR=tools
 BUILD_DIR=build
